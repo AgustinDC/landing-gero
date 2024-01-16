@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import ringa from './ringa.png'
+import ringa from './ringa.png';
+import Navbar from './Componentes/Navbar';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navbar />
         <img src={ringa} className="App-logo mb-4 border rounded-full border-none" alt="logo" />
         <p className='text-3xl text-blue-600'>
           Landing gero re bonete.
