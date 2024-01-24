@@ -1,4 +1,3 @@
-import "./App.css";
 import Carrusel from "./Componentes/Carrusel";
 import Footer from "./Componentes/Footer";
 import Navbar from "./Componentes/Navbar";
