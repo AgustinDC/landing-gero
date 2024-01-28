@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 function Navbar() {
-  const [mostrarMenu, setMostrarMenu] = useState(true);
+  const [mostrarMenu, setMostrarMenu] = useState(false);
   const handleClick = () => {
     setMostrarMenu(!mostrarMenu);
     console.log(mostrarMenu);
@@ -13,6 +13,7 @@ function Navbar() {
       
       <div className="text-white text-3xl font-bold mb-1 md:mb-0"> AS <span className="font-light"> Consulting </span> </div>
       
+      {/* Navbar - @media menor a 768px */}
       <div onClick={handleClick} className="md:hidden absolute right-4 top-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +27,8 @@ function Navbar() {
           />
         </svg>
       </div>
-      {mostrarMenu && (
-        <div className="text-white flex flex-col items-center mt-2 md:flex-row gap-3">
+        {mostrarMenu && (
+        <div className="md:hidden text-white flex flex-col items-center mt-2 gap-3">
           <a className="hover:border border-solid hover:border-white rounded" href="">Acerca de</a>
           <a className="hover:border border-solid hover:border-white rounded" href="">Home</a>
           <a className="hover:border border-solid hover:border-white rounded" href="">Servicios</a>
@@ -35,20 +36,19 @@ function Navbar() {
           <a className="hover:border border-solid hover:border-white rounded" href="">Contacto</a>
         </div>
       )}
+      
+      {/* Navbar - @media mayor a 768px */}
+
+      <div className="text-white flex flex-row max-md:hidden items-center mt-2 gap-3">
+        <a className="hover:border border-solid hover:border-white rounded" href="">Acerca de</a>
+        <a className="hover:border border-solid hover:border-white rounded" href="">Home</a>
+        <a className="hover:border border-solid hover:border-white rounded" href="">Servicios</a>
+        <a className="hover:border border-solid hover:border-white rounded" href="">Preguntas Frecuentes</a>
+        <a className="hover:border border-solid hover:border-white rounded" href="">Contacto</a>
+      </div>
+
     </div>
   );
 }
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,12 +2,13 @@ import Carrusel from "./Componentes/Carrusel";
 import Footer from "./Componentes/Footer";
 import Navbar from "./Componentes/Navbar";
 import Acerca from "./Componentes/Acerca";
+import Slider from "./Componentes/Slider";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Carrusel />
+      <Slider />
       <Acerca />
       <Footer />
     </div>
