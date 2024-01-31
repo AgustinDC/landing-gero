@@ -29,22 +29,22 @@ function Navbar() {
       </div>
         {mostrarMenu && (
         <div className="md:hidden text-white flex flex-col items-center mt-2 gap-3">
-          <a className="hover:border border-solid hover:border-white rounded" href="">Acerca de</a>
-          <a className="hover:border border-solid hover:border-white rounded" href="">Home</a>
-          <a className="hover:border border-solid hover:border-white rounded" href="">Servicios</a>
-          <a className="hover:border border-solid hover:border-white rounded" href="">Preguntas Frecuentes</a>
-          <a className="hover:border border-solid hover:border-white rounded" href="">Contacto</a>
+          <a className="hover:cursor-pointer" href="">Acerca de</a>
+          <a className="hover:cursor-pointer" href="">Home</a>
+          <a className="hover:cursor-pointer" href="">Servicios</a>
+          <a className="hover:cursor-pointer" href="#Preguntas">Preguntas Frecuentes</a>
+          <a className="hover:cursor-pointer" href="">Contacto</a>
         </div>
       )}
       
       {/* Navbar - @media mayor a 768px */}
 
       <div className="text-white flex flex-row max-md:hidden items-center mt-2 gap-3">
-        <a className="hover:border border-solid hover:border-white rounded" href="">Acerca de</a>
-        <a className="hover:border border-solid hover:border-white rounded" href="">Home</a>
-        <a className="hover:border border-solid hover:border-white rounded" href="">Servicios</a>
-        <a className="hover:border border-solid hover:border-white rounded" href="">Preguntas Frecuentes</a>
-        <a className="hover:border border-solid hover:border-white rounded" href="">Contacto</a>
+        <a className="hover:cursor-pointer" href="">Acerca de</a>
+        <a className="hover:cursor-pointer" href="">Home</a>
+        <a className="hover:cursor-pointer" href="">Servicios</a>
+        <a className="hover:cursor-pointer" href="">Preguntas Frecuentes</a>
+        <a className="hover:cursor-pointer" href="">Contacto</a>
       </div>
 
     </div>

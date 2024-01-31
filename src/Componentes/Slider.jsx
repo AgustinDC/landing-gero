@@ -35,7 +35,7 @@ function Slider() {
   };
 
   return (
-    <div className="h-screen m-auto group">
+    <div className="h-screen group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="h-screen bg-center bg-cover duration-500"
