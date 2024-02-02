@@ -1,17 +1,16 @@
-import Footer from "./Componentes/Footer";
 import Navbar from "./Componentes/Navbar";
-import Acerca from "./Componentes/Acerca";
 import Slider from "./Componentes/Slider";
+import Servicios from "./Componentes/Servicios";
 import PreguntasFrecuentes from "./Componentes/PreguntasFrecuentes";
-
+import Footer from "./Componentes/Footer";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Slider />
+      <Servicios />
       <PreguntasFrecuentes />
-      <Acerca />
       <Footer />
     </div>
   );

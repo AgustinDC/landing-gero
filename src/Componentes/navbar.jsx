@@ -29,24 +29,20 @@ function Navbar() {
       </div>
         {mostrarMenu && (
         <div className="md:hidden text-white flex flex-col items-center mt-2 gap-3">
-          <a className="hover:cursor-pointer" href="">Acerca de</a>
-          <a className="hover:cursor-pointer" href="">Home</a>
-          <a className="hover:cursor-pointer" href="">Servicios</a>
-          <a className="hover:cursor-pointer" href="#Preguntas">Preguntas Frecuentes</a>
-          <a className="hover:cursor-pointer" href="">Contacto</a>
+          <a className="hover:cursor-pointer" href="#home">Home</a>
+          <a className="hover:cursor-pointer" href="#servicios">Servicios</a>
+          <a className="hover:cursor-pointer" href="#preguntas">Preguntas Frecuentes</a>
+          <a className="hover:cursor-pointer" href="footer">Contacto</a>
         </div>
       )}
       
       {/* Navbar - @media mayor a 768px */}
-
-      <div className="text-white flex flex-row max-md:hidden items-center mt-2 gap-3">
-        <a className="hover:cursor-pointer" href="">Acerca de</a>
-        <a className="hover:cursor-pointer" href="">Home</a>
-        <a className="hover:cursor-pointer" href="">Servicios</a>
-        <a className="hover:cursor-pointer" href="">Preguntas Frecuentes</a>
-        <a className="hover:cursor-pointer" href="">Contacto</a>
+      <div className="text-white flex flex-row max-md:hidden items-center mt-2 gap-5">
+        <a className="hover:cursor-pointer" href="#home">Home</a>
+        <a className="hover:cursor-pointer" href="#servicios">Servicios</a>
+        <a className="hover:cursor-pointer" href="#preguntas">Preguntas Frecuentes</a>
+        <a className="hover:cursor-pointer" href="#footer">Contacto</a>
       </div>
-
     </div>
   );
 }
